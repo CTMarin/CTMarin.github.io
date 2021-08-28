@@ -203,6 +203,7 @@ h4 {
 /*Smaller devices*/
 @media only screen and (max-width: 600px) {
     .navbar {
+        position: fixed;
         bottom: 0;
         width: 100vw;
         height: 5rem;
@@ -217,14 +218,14 @@ h4 {
     }
 
     main {
-        display: flex;
         margin-left: 1rem;
+        margin-bottom: 5rem;
         padding: 1rem;
         color: white;
         flex-direction: column;
-        justify-content: center;
-        position: absolute;
+        position: relative;
         z-index: -1;
+        justify-content: center;
         font-size: 5vw;
         cursor: default;
     }
