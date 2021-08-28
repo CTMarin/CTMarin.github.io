@@ -57,11 +57,11 @@ h4 {
 .nav-item {
     width: 100%;
 }
-
+/*
 .nav-item:last-child {
     margin-top: auto;
 }
-
+*/
 .nav-link {
     display: flex;
     align-items: center;
@@ -100,6 +100,35 @@ h4 {
     color: var(--icon);
     transition: var(--transition-speed);
 }
+
+.project {
+    max-width: 410px;
+    margin: 1rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 20px 5px var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project p {
+    margin: 1rem;
+}
+
+.project-main {
+    display: flex;
+    top: 0;
+}
+
+.projects-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-cont a {
+    text-decoration: none;
+}
+
 
 /*Longer devices*/
 @media only screen and (min-width: 1800px) {
@@ -152,6 +181,15 @@ h4 {
         margin-right: 10rem;
         margin-left: 3rem;
     }
+
+    .project img {
+        max-width: 390px;
+        max-height: 300px;
+        margin: 1rem;
+        height: 27vw;
+        width: 35vw;
+        box-shadow: 5px 10px 20px 5px var(--bg-primary);
+    }
 }
 
 /*Mid devices*/
@@ -197,6 +235,15 @@ h4 {
         max-width: 50rem;
         margin-right: 1vw;
         margin-left: 1vw;
+    }
+
+    .project img {
+        max-width: 390px;
+        max-height: 300px;
+        margin: 1rem;
+        height: 27vw;
+        width: 35vw;
+        box-shadow: 5px 10px 20px 5px var(--bg-primary);
     }
 }
 
@@ -244,6 +291,22 @@ h4 {
         max-width: 50rem;
         margin-right: 1vw;
         margin-left: 1vw;
+    }
+
+    .project img {
+        height: 50vw;
+        width: 65vw;
+        margin: 1rem;
+        box-shadow: 5px 10px 20px 5px var(--bg-primary);
+    }
+    .project {
+        max-width: 380px;
+        margin: 1rem;
+        margin-top: 3rem;
+        box-shadow: 5px 5px 20px 5px var(--bg-primary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
